@@ -1,0 +1,17 @@
+<h1>Write Post Page</h1>
+
+<form action="{% url 'create' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>한줄설명: <input type="text" name="club_desc"></p>
+    <p>모집요강 : <input type="texteara" name="recruitment_content"></p>
+    <!-- enctype="multipart/form-data" 추가한 방법 -->
+    <!-- <p>이미지2:</p> 
+    <div>
+        <label for="file">업로드할 사진을 선택: </label> <br>
+        <input type="file" id="file" name="post_img_url2" multiple>
+    </div> -->
+    <button type="submit">Submit</button>
+</form>
+
+
+

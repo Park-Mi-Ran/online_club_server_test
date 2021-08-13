@@ -44,7 +44,6 @@ class Clubs(models.Model):
     rank = models.IntegerField()
     sns_link = models.CharField(max_length=500, blank=True, null=True)
     form_link = models.CharField(max_length=500, blank=True, null=True)
-    
     def D_day(self,now):
         return int((self.end_day - now).days)
 

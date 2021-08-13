@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG DETAIL</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        동아리 한줄설명 : {{club.club_desc}}
+        모집요강: {{club.recruitment_content}}</h1>
+        
+        
+    </div>
+
+    <a href="{% url 'detailupdate' club.club_detail_id %}">Edit</a>
+    <a href="{% url 'delete' club.club_id %}">Delete</a>
+    <br>
+    <a href="{% url 'home' %}">Main Page</a>
+</body>
+
+</html>

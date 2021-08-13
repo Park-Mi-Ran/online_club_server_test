@@ -1,0 +1,9 @@
+<h1>Update Post Page</h1>
+
+<form action="{% url 'detailupdate' club.club_detail_id %}" method="post">
+    {% csrf_token %}
+    <p>동아리 이름: {{club.club_name}} </p>
+    <p>한줄 설명: <input type="text" name="desc" value="{{club.club_desc}}"></p>
+    <p>모집요강 : <input type="text" name="recruitment" value="{{club.recruitment_content}}"></p>
+    <button type="submit">Submit</button>
+</form>
